@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'todo_db',
         'USER': 'root',
         'PASSWORD': '',
-        'HOST': 'host.docker.internal',
+        'HOST': os.getenv("DB_HOST", "mysql-service"),
         'PORT': '3306',
     }
 }
